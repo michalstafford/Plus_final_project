@@ -74,7 +74,7 @@ h1 {
 }
 .weather-forecast-temperatures-min {
     opacity: 0.6;
-    color: pink;
+    color:#97cba9;
 }
 .weather-forecast .row {
   display: flex;
@@ -118,4 +118,5 @@ header {
 
 footer{
     margin-bottom: auto;
+    padding: 100px 0px 0px 0px;
 }
