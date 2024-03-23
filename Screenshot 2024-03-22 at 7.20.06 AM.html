@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///Users/michalstafford/Desktop/Plus_final_project/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Screenshot 2024-03-22 at 7.20.06 AM_files/style.css">
+    <script src="./Screenshot 2024-03-22 at 7.20.06 AM_files/axios.min.js"></script>
+    <title>2nd Weather App</title>
+</head>
+<body>
+    <div class="weather-app">
+<header>
+<form class="search-form" id="search-form">
+    <input type="text" placeholder="Enter a city" class="search-form-input" id="search-form-input" required="">
+    <input type="submit" value="search" class="search-form-button">
+</form>
+    </header>
+    <main>
+    <div>
+        <h1 class="weather-app-city" id="city">Manteca</h1>
+    <div class="weather-app-container row">
+    <p class="current-details col">
+        <span id="current-date-time">Saturday, 3/23/2024 11:17 AM</span>
+    <br>
+        <span id="current-weather-conditions">broken clouds</span>
+        
+    <br>
+    Humidity: <strong id="humidity">72%</strong> , Wind: <strong id="wind-speed">11.5 mph</strong> 
+    </p> 
+  
+    <div class="current-temp-container col">
+        <div id="icon" class="current-temp-icon"><img src="./Screenshot 2024-03-22 at 7.20.06 AM_files/broken-clouds-day.png" class="current-temp-icon"></div>
+    <span> 
+          <span class="current-temp-value" id="current-temp-value">58</span> 
+    <span class="current-temp-unit">°F</span>
+    </span></div>
+      </div>
+    <div class="weather-forecast" id="forecast"><span class="row">
+      <span class="col-2">
+        <div class="weather-forecast-date">Tue</div>
+        <img src="./Screenshot 2024-03-22 at 7.20.06 AM_files/rain-night.png" width="30" alt="Weather Icon"> 
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperatures-max">18°</span>
+          <span class="weather-forecast-temperatures-min">12°</span>
+        </div>
+      </span>
+    </span><span class="row">
+      <span class="col-2">
+        <div class="weather-forecast-date">Wed</div>
+        <img src="./Screenshot 2024-03-22 at 7.20.06 AM_files/rain-night.png" width="30" alt="Weather Icon"> 
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperatures-max">18°</span>
+          <span class="weather-forecast-temperatures-min">12°</span>
+        </div>
+      </span>
+    </span><span class="row">
+      <span class="col-2">
+        <div class="weather-forecast-date">Thur</div>
+        <img src="./Screenshot 2024-03-22 at 7.20.06 AM_files/rain-night.png" width="30" alt="Weather Icon"> 
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperatures-max">18°</span>
+          <span class="weather-forecast-temperatures-min">12°</span>
+        </div>
+      </span>
+    </span><span class="row">
+      <span class="col-2">
+        <div class="weather-forecast-date">Fri</div>
+        <img src="./Screenshot 2024-03-22 at 7.20.06 AM_files/rain-night.png" width="30" alt="Weather Icon"> 
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperatures-max">18°</span>
+          <span class="weather-forecast-temperatures-min">12°</span>
+        </div>
+      </span>
+    </span><span class="row">
+      <span class="col-2">
+        <div class="weather-forecast-date">Sat</div>
+        <img src="./Screenshot 2024-03-22 at 7.20.06 AM_files/rain-night.png" width="30" alt="Weather Icon"> 
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperatures-max">18°</span>
+          <span class="weather-forecast-temperatures-min">12°</span>
+        </div>
+      </span>
+    </span></div>
+
+    </div>
+    <footer>
+        Coded by <a href="https://github.com/michalstafford" target="_blank">Mic</a>, 
+        is open sourced on  <a href="https://github.com/michalstafford/Second-Project" target="_blank">GitHub</a>, website hosted by <a href="https://weather-app-2-88.netlify.app/" target="_blank">Netlify</a>.
+    </footer>
+   <script src="./Screenshot 2024-03-22 at 7.20.06 AM_files/app.js"></script> 
+   <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    displayForecast();
+  });
+</script>
+    </main>
+   </div>
+
+</body></html>

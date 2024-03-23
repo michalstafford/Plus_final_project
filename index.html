@@ -20,8 +20,8 @@
     <div>
         <h1 class="weather-app-city" id="city">
         </h1>
-    <div class="weather-app-container">
-    <p class="current-details">
+    <div class="weather-app-container row">
+    <p class="current-details col">
         <span id="current-date-time">
         Saturday, 3/17/24 14:49 
         </span>
@@ -31,20 +31,28 @@
     <br />
     Humidity: <strong id="humidity"></strong> , Wind: <strong id="wind-speed">mph</strong> 
     </p> 
-    </div>
-
-    <div class="current-temp-container">
-    <span> 
+  
+    <div class="current-temp-container col">
         <div id="icon" class ="current-temp-icon"></div>
-    <span class="current-temp-value" id="current-temp-value"></span> 
+    <span> 
+          <span class="current-temp-value" id="current-temp-value"></span> 
     <span class="current-temp-unit">°F</span>
     </div>
+      </div>
+    <div class="weather-forecast" id="forecast">
+    </div>
+
     </div>
     <footer>
         Coded by <a href="https://github.com/michalstafford" target="_blank">Mic</a>, 
         is open sourced on  <a href="https://github.com/michalstafford/Second-Project" target="_blank">GitHub</a>, website hosted by <a href="https://weather-app-2-88.netlify.app/" target="_blank">Netlify</a>.
     </footer>
    <script src="src/app.js"></script> 
+   <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    displayForecast();
+  });
+</script>
     </main>
    </div>
 </body>
